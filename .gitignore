@@ -1,7 +1,7 @@
+data/*.csv
+results/*.json
 __pycache__/
-*.py[cod]
-*.so
+*.pyc
 .venv/
-venv/
-.env
 .DS_Store
+.env
