@@ -1,0 +1,63 @@
+{
+  "dataset": "combined_sessions.csv",
+  "baseline_rules": [
+    {
+      "identity_type": "human",
+      "precision": 0.937,
+      "recall": 0.893,
+      "f1": 0.915,
+      "false_negative_rate": 0.107,
+      "n": 300
+    },
+    {
+      "identity_type": "agent",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_negative_rate": 1.0,
+      "n": 198
+    }
+  ],
+  "lightweight_classifier": [
+    {
+      "identity_type": "human",
+      "precision": 0.985,
+      "recall": 0.86,
+      "f1": 0.918,
+      "false_negative_rate": 0.14,
+      "n": 300
+    },
+    {
+      "identity_type": "agent",
+      "precision": 0.725,
+      "recall": 0.558,
+      "f1": 0.63,
+      "false_negative_rate": 0.442,
+      "n": 198
+    }
+  ],
+  "isolation_forest": [
+    {
+      "identity_type": "human",
+      "precision": 0.92,
+      "recall": 0.92,
+      "f1": 0.92,
+      "false_negative_rate": 0.08,
+      "n": 300
+    },
+    {
+      "identity_type": "agent",
+      "precision": 1.0,
+      "recall": 0.106,
+      "f1": 0.191,
+      "false_negative_rate": 0.894,
+      "n": 198
+    }
+  ],
+  "thresholds_used": {
+    "actions_per_session": 18.786346561334614,
+    "batch_size_mean": 1.634105699024858,
+    "idle_ratio": 0.30716410848301173
+  },
+  "note": "See README limitations before citing these numbers."
+}
